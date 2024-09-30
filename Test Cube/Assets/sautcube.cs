@@ -22,5 +22,22 @@ public class sautcube : MonoBehaviour
             transform.Translate(new Vector3(0, 1, 0) * vitesse);
         }
         
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(new Vector3(-1, 0, 0) * vitesse);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(new Vector3(1, 0, 0) * vitesse);
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            transform.Translate(new Vector3(0, 0, 1) * vitesse);
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            transform.Translate(new Vector3(0, 0, -1) * vitesse);
+        }
+        
     }
 }
